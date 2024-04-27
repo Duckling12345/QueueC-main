@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                             ),
                             const SizedBox(height: 20),
                             const Text(
-                              "Up Next:",
+                              "View Queue",
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.white,
@@ -120,10 +120,10 @@ class HomePage extends StatelessWidget {
                             ),
                             const SizedBox(height: 5),
                             const Text(
-                              "10",
+                              "here",
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w500,
                                   fontSize: 20),
                             ),
                           ],
