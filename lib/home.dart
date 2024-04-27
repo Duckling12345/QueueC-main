@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:queuec/about.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -17,7 +18,13 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AboutPage()),
+                        //change to forms (?) or List.dart
+                      );
+                    },
                     child: Container(
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
@@ -68,7 +75,12 @@ class HomePage extends StatelessWidget {
                           ],
                         ))),
                 InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AboutPage()),
+                      );
+                    },
                     child: Container(
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
@@ -135,8 +147,18 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     InkWell(
-                      onTap: () {
-                        //Add code here for the website thingy
+                      onTap: () async {
+                        final url =
+                            'https://www.tip.edu.ph/home/tip-develops-hand-rehabilitation-device/';
+
+                        if (await canLaunch(url)) {
+                          await launch(
+                            url,
+                            forceSafariVC: false,
+                            forceWebView: true,
+                            enableJavaScript: true,
+                          );
+                        }
                       },
                       child: Image.asset(
                         'images/abet_logo.jpg',

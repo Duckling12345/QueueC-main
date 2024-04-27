@@ -61,7 +61,6 @@ class _MyHomePageState extends State<MyHomePage> {
     TelleringPage(),
     RegistrarPage(),
     HomePage(),
-    AboutPage(),
     ParkingPage(),
     AccountingPage(),
   ];
