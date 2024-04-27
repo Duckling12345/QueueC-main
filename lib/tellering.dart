@@ -112,19 +112,21 @@ class _TelleringPageState extends State<TelleringPage> {
         TextField(
           controller: subjectController,
           decoration: const InputDecoration(
-              labelText: 'Subject', labelStyle: TextStyle(color: Colors.black)),
+              labelText: 'Student Number',
+              labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
         ),
         TextField(
           controller: emailController,
           decoration: const InputDecoration(
-              labelText: 'Email', labelStyle: TextStyle(color: Colors.black)),
+              labelText: 'Student Name',
+              labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
         ),
         TextField(
           controller: additionalInfoController,
           decoration: const InputDecoration(
-              labelText: 'What is your concern',
+              labelText: 'Mode of Payment (Indicate Cash or Card)',
               labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
           maxLines: 2, // Allof

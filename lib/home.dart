@@ -161,7 +161,7 @@ class HomePage extends StatelessWidget {
                         }
                       },
                       child: Image.asset(
-                        'images/abet_logo.jpg',
+                        'images/sample.jpg',
                         width: 100,
                         height: 50,
                       ),

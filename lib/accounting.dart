@@ -76,7 +76,7 @@ class _AccountingPageState extends State<AccountingPage> {
                   'Reassessment of Fees',
                   'Refund',
                   'Registration Card',
-                  'SHS Voucher',
+                  'Student Discounts',
                   'Student Balance',
                 ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
@@ -112,22 +112,24 @@ class _AccountingPageState extends State<AccountingPage> {
         TextField(
           controller: subjectController,
           decoration: const InputDecoration(
-              labelText: 'Subject', labelStyle: TextStyle(color: Colors.black)),
+              labelText: 'Student Number',
+              labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
         ),
         TextField(
           controller: emailController,
           decoration: const InputDecoration(
-              labelText: 'Email', labelStyle: TextStyle(color: Colors.black)),
+              labelText: 'Student Name',
+              labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
         ),
         TextField(
           controller: additionalInfoController,
           decoration: const InputDecoration(
-              labelText: 'What is your concern',
+              labelText: 'Strand/Program',
               labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
-          maxLines: 2, // Allof
+          maxLines: 1, // Allof
         ),
         const SizedBox(height: 20),
         Center(

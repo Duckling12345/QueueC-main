@@ -26,6 +26,8 @@ flutter:
     - images/ayos.png
     - images/logo.png
     - images/abet_logo.jpg
+    - images/sample.jpg
+    - images/pila.jpg
   # fonts:
   #   - family: Schyler
   #     fonts:

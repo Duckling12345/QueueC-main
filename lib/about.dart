@@ -15,9 +15,9 @@ class AboutPage extends StatelessWidget {
             children: [
               Center(
                 child: Image.asset(
-                  'images/ayos.png',
-                  width: 200,
-                  height: 200,
+                  'images/pila.jpg',
+                  width: 300,
+                  height: 250,
                 ),
               ),
               const SizedBox(height: 20),

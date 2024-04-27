@@ -112,13 +112,15 @@ class _RegistrarPageState extends State<RegistrarPage> {
         TextField(
           controller: subjectController,
           decoration: const InputDecoration(
-              labelText: 'Subject', labelStyle: TextStyle(color: Colors.black)),
+              labelText: 'Student Number',
+              labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
         ),
         TextField(
           controller: emailController,
           decoration: const InputDecoration(
-              labelText: 'Email', labelStyle: TextStyle(color: Colors.black)),
+              labelText: 'Student Name',
+              labelStyle: TextStyle(color: Colors.black)),
           style: const TextStyle(color: Colors.black),
         ),
         TextField(
